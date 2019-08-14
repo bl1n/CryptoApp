@@ -8,7 +8,7 @@ import android.view.MenuItem
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.InterstitialAd
 import team.lf.cryptoapp.activities.AboutActivity
-import team.lf.cryptoapp.fragments.CurrenciesListFragment
+import team.lf.cryptoapp.mvp.fragments.CurrenciesListFragment
 
 class MainActivity : AppCompatActivity() {
 
