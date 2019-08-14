@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="team.lf.cryptoapp">
+
     <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
@@ -11,8 +12,11 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".activities.AboutActivity"
-        android:parentActivityName=".MainActivity">
+        <activity android:name=".activities.ChartActivity">
+        </activity>
+        <activity
+                android:name=".activities.AboutActivity"
+                android:parentActivityName=".MainActivity">
         </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -21,9 +25,10 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
         <meta-data
-            android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-6307301363621212~6256836331"/>
+                android:name="com.google.android.gms.ads.APPLICATION_ID"
+                android:value="ca-app-pub-6307301363621212~6256836331"/>
     </application>
 
 </manifest>

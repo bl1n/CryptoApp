@@ -11,7 +11,7 @@ import team.lf.cryptoapp.R
 import team.lf.cryptoapp.formatters.dateToString
 
 @SuppressLint("ViewConstructor")
-class MyMarker(context: Context, layoutResources: Int):MarkerView(context, layoutResources) {
+class MyMarkerView(context: Context, layoutResources: Int):MarkerView(context, layoutResources) {
     private val tvContent: TextView
     init {
         tvContent = findViewById(R.id.tvContent)
