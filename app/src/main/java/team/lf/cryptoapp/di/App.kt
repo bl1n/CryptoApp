@@ -1,6 +1,7 @@
 package team.lf.cryptoapp.di
 
 import android.app.Application
+import android.support.multidex.MultiDex
 
 class App: Application() {
     companion object{
@@ -9,6 +10,7 @@ class App: Application() {
     override fun onCreate() {
         super.onCreate()
         initializeDagger()
+        MultiDex.install(this)
     }
 
     private fun initializeDagger() {
